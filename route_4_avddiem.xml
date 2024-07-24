@@ -1,0 +1,56 @@
+<routes>
+<route id="4" town="Town12">
+   <!-- Rural route focused on crossing actors -->
+   <weathers>
+      <weather route_percentage="0"
+         cloudiness="20.0" precipitation="30.0" precipitation_deposits="50.0" wetness="0.0"
+         wind_intensity="30.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="3.0"/>
+      <weather route_percentage="100"
+         cloudiness="60.0" precipitation="60.0" precipitation_deposits="60.0" wetness="0.0"
+         wind_intensity="60.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="3.0"/>
+   </weathers>
+   <waypoints>
+      <position x="3710.6" y="1885.6" z="349.4"/>
+      <position x="3710.8" y="2465.8" z="362.7"/>
+      <position x="3661.3" y="2522.4" z="364.4"/> 
+      <position x="3601.0" y="2497.1" z="363.5"/>
+      <position x="3551.0" y="2406.0" z="361.3"/>
+   </waypoints>
+   <scenarios>
+      <scenario name="AccidentTwoWays_1" type="AccidentTwoWays">
+         <trigger_point x="3710.6" y="1925.2" z="349.2" yaw="90.0"/>
+         <distance value="75"/>
+         <frequency from="40" to="115"/>
+      </scenario>
+      <scenario name="DynamicObjectCrossing_1" type="DynamicObjectCrossing">
+         <trigger_point x="3710.7" y="2114.2" z="356.3" yaw="90.0"/>
+         <distance value="45"/>
+         <blocker_model value="static.prop.foodcart"/>
+         <crossing_angle value="15"/>
+      </scenario>
+      <scenario name="VehicleTurningRoute_1" type="VehicleTurningRoute">
+         <trigger_point x="3710.8" y="2467.8" z="362.8" yaw="90.0"/>
+      </scenario>
+      <scenario name="DynamicObjectCrossing_2" type="DynamicObjectCrossing">
+         <trigger_point x="3684.2" y="2522.4" z="364.4" yaw="179.8"/>
+         <distance value="30"/>
+         <blocker_model value="static.prop.haybalelb"/>
+         <crossing_angle value="15"/>
+      </scenario>
+      <scenario name="NonSignalizedJunctionRightTurn_1" type="NonSignalizedJunctionRightTurn">
+         <trigger_point x="3645.0" y="2522.5" z="364.3" yaw="179.8"/>
+         <flow_speed value="10"/>
+         <source_dist_interval from="20" to="55"/>
+      </scenario>
+      <scenario name="VehicleTurningRoutePedestrian_1" type="VehicleTurningRoutePedestrian">
+         <trigger_point x="3601.0" y="2443.9" z="362.4" yaw="-89.9"/>
+      </scenario>
+      <scenario name="DynamicObjectCrossing_3" type="DynamicObjectCrossing">
+         <trigger_point x="3578.9" y="2405.9" z="361.4" yaw="179.8"/>
+         <distance value="35"/>
+         <blocker_model value="static.prop.haybalelb"/>
+         <crossing_angle value="10"/>
+      </scenario>
+   </scenarios>
+</route>
+</routes>

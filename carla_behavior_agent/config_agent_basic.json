@@ -1,0 +1,20 @@
+{
+    "sensors" : [
+            {"type": "sensor.camera.rgb", "id": "Center",
+            "x": 0.7, "y": 0.0, "z": 1.60, "roll": 0.0, "pitch": 0.0, "yaw": 0.0, "width": 300, "height": 200, "fov": 100},
+            {"type": "sensor.lidar.ray_cast", "id": "LIDAR",
+            "x": 0.7, "y": -0.4, "z": 1.60, "roll": 0.0, "pitch": 0.0, "yaw": -45.0},
+            {"type": "sensor.other.radar", "id": "RADAR",
+            "x": 0.7, "y": -0.4, "z": 1.60, "roll": 0.0, "pitch": 0.0, "yaw": -45.0, "horizontal_fov": 30, "vertical_fov": 30},
+            {"type": "sensor.other.gnss", "id": "GPS",
+            "x": 0.7, "y": -0.4, "z": 1.60},
+            {"type": "sensor.other.imu", "id": "IMU",
+            "x": 0.7, "y": -0.4, "z": 1.60, "roll": 0.0, "pitch": 0.0, "yaw": -45.0},
+            {"type": "sensor.speedometer", "id": "Speed"}
+    ],
+    "longitudinal_control_dict" :{"K_P": 0.888, "K_I": 0.0768, "K_D": 0.05, "dt": 0.03},
+    "lateral_control_dict" : {"K_V": 4.0, "K_S": 1.0, "dt": 0.03},
+    "target_speed": 30.0,
+    "Visualizer_IP" : "172.16.174.233",
+    "SaveSpeedData" : "speed.txt"
+}

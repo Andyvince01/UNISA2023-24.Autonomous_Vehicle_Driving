@@ -1,0 +1,128 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "route_id": -1,
+            "status": "Failed",
+            "infractions": {
+                "collisions_layout": 2.569,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "red_light": 0.0,
+                "stop_infraction": 0.0,
+                "outside_route_lanes": 0,
+                "min_speed_infractions": 0.0,
+                "yield_emergency_vehicles_infractions": 0.0,
+                "scenario_timeouts": 2.569,
+                "route_dev": 0.0,
+                "vehicle_blocked": 0.0,
+                "route_timeout": 2.569
+            },
+            "scores_mean": {
+                "score_composed": 5.5237,
+                "score_route": 12.14,
+                "score_penalty": 0.455
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_route": "NaN",
+                "score_penalty": "NaN"
+            },
+            "meta": {
+                "exceptions": [
+                    [
+                        "RouteScenario_1_rep0",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ]
+            }
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "route_id": "RouteScenario_1_rep0",
+                "status": "Failed - Agent timed out",
+                "num_infractions": 3,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.prop.trafficwarning and id=27810 at (x=-1361.911, y=1608.825, z=327.958)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "red_light": [],
+                    "stop_infraction": [],
+                    "outside_route_lanes": [],
+                    "min_speed_infractions": [],
+                    "yield_emergency_vehicles_infractions": [],
+                    "scenario_timeouts": [
+                        "Agent timed out a scenario"
+                    ],
+                    "route_dev": [],
+                    "vehicle_blocked": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ]
+                },
+                "scores": {
+                    "score_route": 12.14,
+                    "score_penalty": 0.455,
+                    "score_composed": 5.5237
+                },
+                "meta": {
+                    "route_length": 3206.913,
+                    "duration_game": 475.85,
+                    "duration_system": 1086.962
+                }
+            }
+        ]
+    },
+    "entry_status": "Finished",
+    "eligible": true,
+    "sensors": [
+        "carla_camera",
+        "carla_lidar",
+        "carla_radar",
+        "carla_gnss",
+        "carla_imu",
+        "carla_speedometer"
+    ],
+    "values": [
+        "5.5237",
+        "12.14",
+        "0.455",
+        "0.0",
+        "0.0",
+        "2.569",
+        "0.0",
+        "0.0",
+        "0",
+        "0.0",
+        "2.569",
+        "0.0",
+        "0.0",
+        "2.569",
+        "0.0"
+    ],
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked",
+        "Yield emergency vehicles infractions",
+        "Scenario timeouts",
+        "Min speed infractions"
+    ]
+}
